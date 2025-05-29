@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33205.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LocationMap", "LocationMap\LocationMap.csproj", "{2EB31646-7AA2-4F6B-98FB-7B93260B6512}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ersk.Simulation", "Ersk.Simulation\Ersk.Simulation.csproj", "{55CAE024-219E-4F26-A3AB-C84892470096}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Definitions", "Definitions\Definitions.shproj", "{AA6BD6F3-FA7E-4C36-8CE5-90EACE7BD174}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestRunner", "TestRunner\TestRunner.csproj", "{D99A82C1-D950-406D-953A-AB17F6B78122}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2EB31646-7AA2-4F6B-98FB-7B93260B6512}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2EB31646-7AA2-4F6B-98FB-7B93260B6512}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2EB31646-7AA2-4F6B-98FB-7B93260B6512}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2EB31646-7AA2-4F6B-98FB-7B93260B6512}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55CAE024-219E-4F26-A3AB-C84892470096}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55CAE024-219E-4F26-A3AB-C84892470096}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55CAE024-219E-4F26-A3AB-C84892470096}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55CAE024-219E-4F26-A3AB-C84892470096}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D99A82C1-D950-406D-953A-AB17F6B78122}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D99A82C1-D950-406D-953A-AB17F6B78122}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D99A82C1-D950-406D-953A-AB17F6B78122}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D99A82C1-D950-406D-953A-AB17F6B78122}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {09BC5D85-BF3F-4F7F-840C-F8ECE64F73A3}
+	EndGlobalSection
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		Definitions\Definitions.projitems*{aa6bd6f3-fa7e-4c36-8ce5-90eace7bd174}*SharedItemsImports = 13
+	EndGlobalSection
+EndGlobal

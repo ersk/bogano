@@ -1,0 +1,15 @@
+{
+  "Id": "Bottled_Water",
+  "TotalVolume": 300,
+  "DrinkLiquid_Activity": {
+    "Id":  "Drink_Bottled_Water",
+    "PartialActivityConsumeVolume": 50,
+    "PartialActivityTicksToComplete": 100,
+    "PartialActivityProvidedNeeds": [
+      {
+        "Need": "Water",
+        "Amount": 2
+      }
+    ]
+  }
+}
