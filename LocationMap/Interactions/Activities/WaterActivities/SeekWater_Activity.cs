@@ -17,7 +17,8 @@ namespace LocationMap.Interactions.Activities.WaterActivities
             {
                 // locate water source
 
-                // river, well, bottle, tab, fountain
+                // bottle/cup, water fountain, sink, outside fountain, river, well,
+                // clenliness of water?
             }
             else
             {

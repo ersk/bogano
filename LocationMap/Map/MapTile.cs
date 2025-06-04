@@ -10,6 +10,7 @@ namespace LocationMap.Map
 {
     internal class MapTile
     {
+        private PhysicalContainer container; // items that exist on this tile
         private int100 walkSpeed = 100;
         public int100 WalkSpeed => walkSpeed;
 

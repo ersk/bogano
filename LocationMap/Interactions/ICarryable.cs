@@ -8,5 +8,9 @@ namespace LocationMap.Interactions
 {
     internal interface ICarryable
     {
+        // pickup()
+        // drop()
+        // throw? IThrowable? - depends on weight/size
+        // is being carried?
     }
 }

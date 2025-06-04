@@ -1,6 +1,6 @@
 ﻿using LocationMap.Logging;
 using LocationMap.PhysicalEntities;
-using LocationMap.PhysicalEntities.AnimalNeeds;
+using LocationMap.PhysicalEntities.Animals.AnimalNeeds;
 using System;
 using System.Collections.Generic;
 using System.Linq;

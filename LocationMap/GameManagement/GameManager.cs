@@ -1,7 +1,7 @@
 ﻿using Ersk.Simulation.DataTypes;
 using LocationMap.Logging;
 using LocationMap.Map;
-using LocationMap.Pathfinding;
+using LocationMap.Map.Pathfinding;
 using LocationMap.PhysicalEntities.AnimalNeeds;
 using LocationMap.PhysicalEntities.Drink;
 using System;

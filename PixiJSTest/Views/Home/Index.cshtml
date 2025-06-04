@@ -1,0 +1,229 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+
+<script type="module">
+
+    import { Application, Assets, Container, Sprite, Spritesheet } from 'https://cdnjs.cloudflare.com/ajax/libs/pixi.js/8.6.6/pixi.mjs';
+
+    /*
+    Wall
+    Wall_NS
+    Wall_EW
+
+
+    */
+    let spritesheetData = {
+        "frames": {
+            "Wall_E.png":
+            {
+                "frame": {"x":2,"y":2,"w":64,"h":64},
+                "spriteSourceSize": {"x":0,"y":0,"w":64,"h":64},
+                "sourceSize": {"w":64,"h":64},
+                "anchor": {"x":0,"y":0}
+            },
+            "Wall_W.png":
+            {
+                "frame": {"x":70,"y":2,"w":64,"h":64},
+                "spriteSourceSize": {"x":0,"y":0,"w":64,"h":64},
+                "sourceSize": {"w":64,"h":64},
+                "anchor": {"x":0,"y":0}
+            },
+            "Wall_S.png":
+            {
+                "frame": {"x":138,"y":2,"w":64,"h":64},
+                "spriteSourceSize": {"x":0,"y":0,"w":64,"h":64},
+                "sourceSize": {"w":64,"h":64},
+                "anchor": {"x":0,"y":0}
+            },
+            "Wall_N.png":
+            {
+                "frame": {"x":206,"y":2,"w":64,"h":64},
+                "spriteSourceSize": {"x":0,"y":0,"w":64,"h":64},
+                "sourceSize": {"w":64,"h":64},
+                "anchor": {"x":0,"y":0}
+            },
+
+            "Wall_ES.png":
+            {
+                "frame": {"x":2,"y":70,"w":64,"h":64},
+                "spriteSourceSize": {"x":0,"y":0,"w":64,"h":64},
+                "sourceSize": {"w":64,"h":64},
+                "anchor": {"x":0,"y":0},
+                "trimmed": true
+            },
+            "Wall_SW.png":
+            {
+                "frame": {"x":70,"y":70,"w":64,"h":64},
+                "spriteSourceSize": {"x":0,"y":0,"w":64,"h":64},
+                "sourceSize": {"w":64,"h":64},
+                "anchor": {"x":0,"y":0},
+                "trimmed": true
+            },
+            "Wall_NW.png":
+            {
+                "frame": {"x":138,"y":70,"w":64,"h":64},
+                "spriteSourceSize": {"x":0,"y":0,"w":64,"h":64},
+                "sourceSize": {"w":64,"h":64},
+                "anchor": {"x":0,"y":0},
+                "trimmed": true
+            },
+            "Wall_NE.png":
+            {
+                "frame": {"x":206,"y":70,"w":64,"h":64},
+                "spriteSourceSize": {"x":0,"y":0,"w":64,"h":64},
+                "sourceSize": {"w":64,"h":64},
+                "anchor": {"x":0,"y":0},
+                "trimmed": true
+            },
+
+            "Wall_NEW.png":
+            {
+                "frame": {"x":2,"y":138,"w":64,"h":64},
+                "spriteSourceSize": {"x":0,"y":0,"w":64,"h":64},
+                "sourceSize": {"w":64,"h":64},
+                "anchor": {"x":0,"y":0}
+            },
+            "Wall_ESW.png":
+            {
+                "frame": {"x":70,"y":138,"w":64,"h":64},
+                "spriteSourceSize": {"x":0,"y":0,"w":64,"h":64},
+                "sourceSize": {"w":64,"h":64},
+                "anchor": {"x":0,"y":0}
+            },
+            "Wall_NSW.png":
+            {
+                "frame": {"x":138,"y":138,"w":64,"h":64},
+                "spriteSourceSize": {"x":0,"y":0,"w":64,"h":64},
+                "sourceSize": {"w":64,"h":64},
+                "anchor": {"x":0,"y":0}
+            },
+            "Wall_NES.png":
+            {
+                "frame": {"x":206,"y":138,"w":64,"h":64},
+                "spriteSourceSize": {"x":0,"y":0,"w":64,"h":64},
+                "sourceSize": {"w":64,"h":64},
+                "anchor": {"x":0,"y":0}
+            },
+
+            "Wall_EW.png":
+            {
+                "frame": {"x":2,"y":206,"w":64,"h":64},
+                "spriteSourceSize": {"x":0,"y":0,"w":64,"h":64},
+                "sourceSize": {"w":64,"h":64},
+                "anchor": {"x":0,"y":0},
+                "trimmed": true
+            },
+            "Wall_NS.png":
+            {
+                "frame": {"x":70,"y":206,"w":64,"h":64},
+                "spriteSourceSize": {"x":0,"y":0,"w":64,"h":64},
+                "sourceSize": {"w":64,"h":64},
+                "anchor": {"x":0,"y":0},
+                "trimmed": true
+            },
+            "Wall.png":
+            {
+                "frame": {"x":138,"y":206,"w":64,"h":64},
+                "spriteSourceSize": {"x":0,"y":0,"w":64,"h":64},
+                "sourceSize": {"w":64,"h":64},
+                "anchor": {"x":0,"y":0}
+            },
+            "Wall_NESW.png":
+            {
+                "frame": {"x":206,"y":206,"w":64,"h":64},
+                "spriteSourceSize": {"x":0,"y":0,"w":64,"h":64},
+                "sourceSize": {"w":64,"h":64},
+                "anchor": {"x":0,"y":0}
+            }
+        },
+
+        "meta": {
+            "image": "Images/Basic Wall.png",
+            "format": "RGBA8888",
+            "size": {"w":272,"h":272},
+            "scale": "1"
+        }
+    };
+
+    let map = [
+        ["ES", "EW", "EW", "EW", "SW"],
+        ["NS", "", "", "", "NS"],
+         ["NS", "", "", "", "NS"],
+          ["NS", "", "", "", "NS"],
+           ["NE", "EW", "EW", "EW", "NW"],
+    ];
+
+
+    (async () =>
+    {
+        // Create a new application
+        const app = new Application({antialias:false});
+
+        // Initialize the application
+        await app.init({ background: '#1099bb', resizeTo: window });
+
+        // Append the application canvas to the document body
+        document.body.appendChild(app.canvas);
+
+        // Create and add a container to the stage
+        const container = new Container();
+
+        app.stage.addChild(container);
+
+        // Load the bunny texture
+        //const texture = await Assets.load('https://pixijs.com/assets/bunny.png');
+        const texture = await Assets.load('Images/Basic Wall.png');
+        const sheet = new Spritesheet(texture, spritesheetData);
+        await sheet.parse();
+        //new Sprite(sheet.textures['Wall.png']);
+
+        //let atlasRes = new AtlasResource(256, 256);
+
+        // Create a 5x5 grid of bunnies in the container
+        for (let i = 0; i < 25; i++)
+        {
+            //const bunny = new Sprite(texture);
+            console.log(`Math.floor(i/5) = ${Math.floor(i/5)} `);
+            let appendPart = map[Math.floor(i/5)][i%5];
+            let spriteName = "Wall";
+            if(appendPart != ""){
+                spriteName += "_"+appendPart;
+            }
+            else{
+                continue;
+            }
+            spriteName += ".png";
+            console.log(spriteName);
+            const bunny = new Sprite(sheet.textures[spriteName]);
+            bunny.x = (i % 5) * 64;
+            bunny.y = Math.floor(i / 5) * 64;
+            container.addChild(bunny);
+        }
+
+        // Move the container to the center
+        container.x = app.screen.width / 2;
+        container.y = app.screen.height / 2;
+
+        // Center the bunny sprites in local container coordinates
+        container.pivot.x = container.width / 2;
+        container.pivot.y = container.height / 2;
+
+        // Listen for animate update
+        app.ticker.add((time) =>
+        {
+            // Continuously rotate the container!
+            // * use delta to create frame-independent transform *
+            //container.rotation -= 0.01 * time.deltaTime;
+        });
+    })();
+
+</script>

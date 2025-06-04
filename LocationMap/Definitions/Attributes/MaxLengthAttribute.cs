@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 
-namespace ISL.Firefly.DataTypes.Common.Attributes
+namespace LocationMap.Definitions.Attributes
 {
     /// <summary>
     /// Attribute can be added to datatypes specified in the SupportedTypesEnum.
@@ -154,7 +154,7 @@ namespace ISL.Firefly.DataTypes.Common.Attributes
                     msg += " No leading or trailing whitespace characters are counted towards the maximum length.";
                 }
 
-                validationFailureReasons.Add(BaseType.FailureKey(AttributeName, prop, ancestorPropertyNames), msg);
+                validationFailureReasons.Add(FailureKey.Create(AttributeName, prop, ancestorPropertyNames), msg);
                 return false;
             }
 
@@ -198,7 +198,7 @@ namespace ISL.Firefly.DataTypes.Common.Attributes
                     msg += " No leading or trailing null elements are counted towards the maximum length.";
                 }
 
-                validationFailureReasons.Add(BaseType.FailureKey(AttributeName, prop, ancestorPropertyNames), msg);
+                validationFailureReasons.Add(FailureKey.Create(AttributeName, prop, ancestorPropertyNames), msg);
                 return false;
             }
             return true;

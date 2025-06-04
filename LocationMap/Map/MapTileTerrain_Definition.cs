@@ -1,4 +1,5 @@
 ﻿using Ersk.Simulation.DataTypes;
+using LocationMap.Definitions;
 using LocationMap.PhysicalEntities;
 using System;
 using System.Collections.Generic;

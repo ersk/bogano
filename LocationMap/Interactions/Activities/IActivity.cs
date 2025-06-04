@@ -1,13 +1,12 @@
 ﻿using Ersk.Simulation.DataTypes;
 using LocationMap.Logging;
-using LocationMap.PhysicalEntities;
-using LocationMap.PhysicalEntities.AnimalNeeds;
+using LocationMap.PhysicalEntities.Animals.AnimalNeeds;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using static LocationMap.PhysicalEntities.Humanoid_Animal;
+using static LocationMap.PhysicalEntities.Animals.Humanoid_Animal;
 
 namespace LocationMap.Interactions.Activities
 {

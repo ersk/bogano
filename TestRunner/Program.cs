@@ -1,6 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using LocationMap.GameManagement;
-using LocationMap.PhysicalEntities;
+using LocationMap.PhysicalEntities.Animals;
 
 Console.WriteLine("Hello, World!");
 

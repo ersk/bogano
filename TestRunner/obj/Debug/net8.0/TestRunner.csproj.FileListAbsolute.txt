@@ -1,0 +1,6 @@
+C:\Users\serskine\_Personal\GitHub\bogano\TestRunner\obj\Debug\net8.0\TestRunner.csproj.AssemblyReference.cache
+C:\Users\serskine\_Personal\GitHub\bogano\TestRunner\obj\Debug\net8.0\TestRunner.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\serskine\_Personal\GitHub\bogano\TestRunner\obj\Debug\net8.0\TestRunner.AssemblyInfoInputs.cache
+C:\Users\serskine\_Personal\GitHub\bogano\TestRunner\obj\Debug\net8.0\TestRunner.AssemblyInfo.cs
+C:\Users\serskine\_Personal\GitHub\bogano\TestRunner\obj\Debug\net8.0\TestRunner.csproj.CoreCompileInputs.cache
+C:\Users\serskine\_Personal\GitHub\bogano\TestRunner\obj\Debug\net8.0\TestRunner.sourcelink.json

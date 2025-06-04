@@ -7,10 +7,10 @@ using System.Text;
 using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
-namespace LocationMap.PhysicalEntities.AnimalNeeds
+namespace LocationMap.Map.Terrain
 {
     [JsonConverter(typeof(DictionaryTKeyEnumTValueConverter))]
-    internal class SoilTypeEnum : ComplexEnumBase<SoilTypeEnum>
+    public class SoilTypeEnum : ComplexEnumBase<SoilTypeEnum>
     {
         public static SoilTypeEnum Clay = new("Clay");
         public static SoilTypeEnum SandyClay = new("SandyClay", "Sandy Clay");

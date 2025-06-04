@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 
-namespace ISL.Firefly.DataTypes.Common.Attributes
+namespace LocationMap.Definitions.Attributes
 {
     /// <summary>
     /// Attribute can be added to datatypes specified in the SupportedTypesEnum.
@@ -158,7 +158,7 @@ namespace ISL.Firefly.DataTypes.Common.Attributes
                     msg += " No leading or trailing whitespace characters are counted towards the minimum length.";
                 }
 
-                validationFailureReasons.Add(BaseType.FailureKey(AttributeName, prop, ancestorPropertyNames), msg);
+                validationFailureReasons.Add(FailureKey.Create(AttributeName, prop, ancestorPropertyNames), msg);
                 return false;
             }
 
@@ -191,7 +191,7 @@ namespace ISL.Firefly.DataTypes.Common.Attributes
             if (count < minLengthAttr.Length)
             {
                 validationFailureReasons.Add(
-                    BaseType.FailureKey(AttributeName, prop, ancestorPropertyNames),
+                    FailureKey.Create(AttributeName, prop, ancestorPropertyNames),
                     $"Property {prop.Name} on class {instance.GetType().FullName}"
                         + $" with instance hashcode '{instance.GetHashCode()}'"
                         + $" has a length of {count}."

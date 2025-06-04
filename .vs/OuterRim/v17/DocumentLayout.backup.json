@@ -1,0 +1,93 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\serskine\\_Personal\\GitHub\\bogano\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2EB31646-7AA2-4F6B-98FB-7B93260B6512}|LocationMap\\LocationMap.csproj|c:\\users\\serskine\\_personal\\github\\bogano\\locationmap\\physicalentities\\animals\\sentients\\sentience.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2EB31646-7AA2-4F6B-98FB-7B93260B6512}|LocationMap\\LocationMap.csproj|solutionrelative:locationmap\\physicalentities\\animals\\sentients\\sentience.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EB31646-7AA2-4F6B-98FB-7B93260B6512}|LocationMap\\LocationMap.csproj|c:\\users\\serskine\\_personal\\github\\bogano\\locationmap\\physicalentities\\animal_physicalentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2EB31646-7AA2-4F6B-98FB-7B93260B6512}|LocationMap\\LocationMap.csproj|solutionrelative:locationmap\\physicalentities\\animal_physicalentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EB31646-7AA2-4F6B-98FB-7B93260B6512}|LocationMap\\LocationMap.csproj|c:\\users\\serskine\\_personal\\github\\bogano\\locationmap\\physicalentities\\animalneeds\\needenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2EB31646-7AA2-4F6B-98FB-7B93260B6512}|LocationMap\\LocationMap.csproj|solutionrelative:locationmap\\physicalentities\\animalneeds\\needenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 429,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{79664857-03bf-4bca-aa54-ec998b3328f8}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Sentience.cs",
+              "DocumentMoniker": "C:\\Users\\serskine\\_Personal\\GitHub\\bogano\\LocationMap\\PhysicalEntities\\Animals\\Sentients\\Sentience.cs",
+              "RelativeDocumentMoniker": "LocationMap\\PhysicalEntities\\Animals\\Sentients\\Sentience.cs",
+              "ToolTip": "C:\\Users\\serskine\\_Personal\\GitHub\\bogano\\LocationMap\\PhysicalEntities\\Animals\\Sentients\\Sentience.cs",
+              "RelativeToolTip": "LocationMap\\PhysicalEntities\\Animals\\Sentients\\Sentience.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAAAYwH4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-01T13:48:50.881Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Animal_PhysicalEntity.cs",
+              "DocumentMoniker": "C:\\Users\\serskine\\_Personal\\GitHub\\bogano\\LocationMap\\PhysicalEntities\\Animal_PhysicalEntity.cs",
+              "RelativeDocumentMoniker": "LocationMap\\PhysicalEntities\\Animal_PhysicalEntity.cs",
+              "ToolTip": "C:\\Users\\serskine\\_Personal\\GitHub\\bogano\\LocationMap\\PhysicalEntities\\Animal_PhysicalEntity.cs",
+              "RelativeToolTip": "LocationMap\\PhysicalEntities\\Animal_PhysicalEntity.cs",
+              "ViewState": "AgIAAGYAAAAAAAAAAAAgwIAAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-01T13:42:34.363Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "NeedEnum.cs",
+              "DocumentMoniker": "C:\\Users\\serskine\\_Personal\\GitHub\\bogano\\LocationMap\\PhysicalEntities\\AnimalNeeds\\NeedEnum.cs",
+              "RelativeDocumentMoniker": "LocationMap\\PhysicalEntities\\AnimalNeeds\\NeedEnum.cs",
+              "ToolTip": "C:\\Users\\serskine\\_Personal\\GitHub\\bogano\\LocationMap\\PhysicalEntities\\AnimalNeeds\\NeedEnum.cs",
+              "RelativeToolTip": "LocationMap\\PhysicalEntities\\AnimalNeeds\\NeedEnum.cs",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAAAHEAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-31T21:23:12.905Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 693,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

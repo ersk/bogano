@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace ISL.Firefly.DataTypes.Common.Attributes
+namespace LocationMap.Definitions.Attributes
 {
     /// <summary>
     /// Indicates the entity property is unique within the solution

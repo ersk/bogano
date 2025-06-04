@@ -8,6 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Ersk.Simulation\Ersk.Simulation.csproj" />
     <ProjectReference Include="..\LocationMap\LocationMap.csproj" />
   </ItemGroup>
 

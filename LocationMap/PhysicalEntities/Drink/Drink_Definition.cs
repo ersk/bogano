@@ -1,7 +1,7 @@
 ﻿using LocationMap.Interactions.Activities;
 using LocationMap.Interactions.Activities.WaterActivities;
 using LocationMap.Logging;
-using LocationMap.PhysicalEntities.AnimalNeeds;
+using LocationMap.PhysicalEntities.Animals.AnimalNeeds;
 using System;
 using System.Collections.Generic;
 using System.Linq;

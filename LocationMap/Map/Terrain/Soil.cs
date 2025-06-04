@@ -8,11 +8,11 @@ using System.Threading.Tasks;
 
 namespace LocationMap.Map.Terrain
 {
-    internal class Soil
+    public class Soil
     {
-        private int100 sand;
-        private int100 silt;
-        private int100 clay;
+        private int100 sand; // yellow
+        private int100 silt; // red
+        private int100 clay; // brown
 
         public Soil(int100 sand, int100 silt)
         {
@@ -29,6 +29,29 @@ namespace LocationMap.Map.Terrain
         public SoilTypeEnum GetSoilType()
         {
             if(clay > 60) { return SoilTypeEnum.Clay; }
+
+            if(clay>40 && silt <60 && sand <20){ return SoilTypeEnum.SiltyClay; }
+
+            if(clay>35 && clay<55 &&sand >45){return SoilTypeEnum.SandyClay;}
+
+            if(clay > 40) return SoilTypeEnum.Clay;
+
+            if(clay > 27 && sand <20) return SoilTypeEnum.SiltyClayLoam;
+
+            if (clay > 27 && sand < 45) return SoilTypeEnum.ClayLoam;
+
+            if (clay < 13 && silt > 80) return SoilTypeEnum.Silt;
+            if (clay < 27 && silt > 50) return SoilTypeEnum.SiltLoam;
+
+            if ((sand > 85 && clay < 5) || (sand > 90 && clay < 10)) return SoilTypeEnum.Sand;
+
+            if ((clay < 20 && sand > 52) || (clay < 8 && silt < 50)) return SoilTypeEnum.SandyLoam;
+
+            if (silt > 27) return SoilTypeEnum.SandyClayLoam;
+
+            return SoilTypeEnum.Loam;
+
+
         }
     }
 }

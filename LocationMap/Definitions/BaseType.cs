@@ -1,4 +1,4 @@
-﻿using ISL.Firefly.DataTypes.Common.Attributes;
+﻿using LocationMap.Definitions.Attributes;
 using System;
 using System.Collections.Generic;
 using System.Linq;

@@ -1,0 +1,12 @@
+C:\Users\serskine\_Personal\GitHub\bogano\Ersk.Simulation\bin\Debug\net8.0\Ersk.Simulation.deps.json
+C:\Users\serskine\_Personal\GitHub\bogano\Ersk.Simulation\bin\Debug\net8.0\Ersk.Simulation.dll
+C:\Users\serskine\_Personal\GitHub\bogano\Ersk.Simulation\bin\Debug\net8.0\Ersk.Simulation.pdb
+C:\Users\serskine\_Personal\GitHub\bogano\Ersk.Simulation\obj\Debug\net8.0\Ersk.Simulation.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\serskine\_Personal\GitHub\bogano\Ersk.Simulation\obj\Debug\net8.0\Ersk.Simulation.AssemblyInfoInputs.cache
+C:\Users\serskine\_Personal\GitHub\bogano\Ersk.Simulation\obj\Debug\net8.0\Ersk.Simulation.AssemblyInfo.cs
+C:\Users\serskine\_Personal\GitHub\bogano\Ersk.Simulation\obj\Debug\net8.0\Ersk.Simulation.csproj.CoreCompileInputs.cache
+C:\Users\serskine\_Personal\GitHub\bogano\Ersk.Simulation\obj\Debug\net8.0\Ersk.Simulation.sourcelink.json
+C:\Users\serskine\_Personal\GitHub\bogano\Ersk.Simulation\obj\Debug\net8.0\Ersk.Simulation.dll
+C:\Users\serskine\_Personal\GitHub\bogano\Ersk.Simulation\obj\Debug\net8.0\refint\Ersk.Simulation.dll
+C:\Users\serskine\_Personal\GitHub\bogano\Ersk.Simulation\obj\Debug\net8.0\Ersk.Simulation.pdb
+C:\Users\serskine\_Personal\GitHub\bogano\Ersk.Simulation\obj\Debug\net8.0\ref\Ersk.Simulation.dll

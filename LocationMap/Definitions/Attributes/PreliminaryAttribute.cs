@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ISL.Firefly.DataTypes.Common.Attributes
+namespace LocationMap.Definitions.Attributes
 {
     /// <summary>
     /// Indicated the class, method, property, etc. is under development and it's signature is liable to be changed in breaking ways without warning.

@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 
-namespace ISL.Firefly.DataTypes.Common.Attributes
+namespace LocationMap.Definitions.Attributes
 {
     /// <summary>
     /// Attribute indicates the property is required for an instance of this class to be valid
@@ -46,25 +46,25 @@ namespace ISL.Firefly.DataTypes.Common.Attributes
                 if (value == null)
                 {
                     string entityUniqueGuid = string.Empty;
-                    if (instance is BaseType baseInstance)
+                    if (instance is Validatable baseInstance)
                     {
                         entityUniqueGuid = baseInstance.UniqueGuid != null ? baseInstance.UniqueGuid.ToString() : "Unknown";
                     }
-                    validationFailureReasons.Add(BaseType.FailureKey(AttributeName, prop, null), $"Value of property {prop.Name} on class {instance.GetType().FullName} with instance hashcode : {instance.GetHashCode()} and uniqueGuid: {entityUniqueGuid} is not set (null)");
+                    validationFailureReasons.Add(FailureKey.Create(AttributeName, prop, null), $"Value of property {prop.Name} on class {instance.GetType().FullName} with instance hashcode : {instance.GetHashCode()} and uniqueGuid: {entityUniqueGuid} is not set (null)");
                 }
-                else if (value is ReferenceBaseType refBaseInstance)
+                else if (value is ReferenceValidatable refBaseInstance)
                 {
                     if (refBaseInstance.UniqueGuid == Guid.Empty)
                     {
-                        validationFailureReasons.Add(BaseType.FailureKey(AttributeName, prop, null), $"UniqueGuid of property {prop.Name} on class {instance.GetType().FullName} with instance hashcode : {instance.GetHashCode()} is not set (Empty Guid)");
+                        validationFailureReasons.Add(FailureKey.Create(AttributeName, prop, null), $"UniqueGuid of property {prop.Name} on class {instance.GetType().FullName} with instance hashcode : {instance.GetHashCode()} is not set (Empty Guid)");
                     }
                 }
                 else if (value is ReferenceReplaceableType || value is ReferenceModifiableType)
                 {
-                    BaseType refBaseTypeInstance = (BaseType)value;
-                    if (refBaseTypeInstance.UniqueGuid == Guid.Empty)
+                    Validatable refValidatableInstance = (Validatable)value;
+                    if (refValidatableInstance.UniqueGuid == Guid.Empty)
                     {
-                        validationFailureReasons.Add(BaseType.FailureKey(AttributeName, prop, null), $"UniqueGuid of property {prop.Name} on class {instance.GetType().FullName} with instance hashcode : {instance.GetHashCode()} is not set (Empty Guid)");
+                        validationFailureReasons.Add(FailureKey.Create(AttributeName, prop, null), $"UniqueGuid of property {prop.Name} on class {instance.GetType().FullName} with instance hashcode : {instance.GetHashCode()} is not set (Empty Guid)");
                     }
                 }
             }
@@ -94,12 +94,12 @@ namespace ISL.Firefly.DataTypes.Common.Attributes
             if (value == null)
             {
                 string entityUniqueGuid = string.Empty;
-                if (instance is BaseType baseInstance)
+                if (instance is Validatable baseInstance)
                 {
                     entityUniqueGuid = baseInstance.UniqueGuid != null ? baseInstance.UniqueGuid.ToString() : "Unknown";
                 }
                 validationFailureReasons.Add(
-                    BaseType.FailureKey(AttributeName, prop, ancestorPropertyNames),
+                    FailureKey.Create(AttributeName, prop, ancestorPropertyNames),
                     $"Value of property {prop.Name} on class {instance.GetType().FullName}"
                     + $"with instance hashcode '{instance.GetHashCode()}'"
                     + $" and uniqueGuid '{entityUniqueGuid}' is not set (null)");
@@ -107,21 +107,21 @@ namespace ISL.Firefly.DataTypes.Common.Attributes
                 return false;
             }
 
-            if (value is ReferenceBaseType refBaseInstance)
+            if (value is ReferenceValidatable refBaseInstance)
             {
                 if (refBaseInstance.UniqueGuid == Guid.Empty)
                 {
-                    validationFailureReasons.Add(BaseType.FailureKey(AttributeName, prop, ancestorPropertyNames), 
+                    validationFailureReasons.Add(FailureKey.Create(AttributeName, prop, ancestorPropertyNames), 
                         $"UniqueGuid of property {prop.Name} on class {instance.GetType().FullName} with instance hashcode : {instance.GetHashCode()} is not set (Empty Guid)");
                     return false;
                 }
             }
             else if (value is ReferenceReplaceableType || value is ReferenceModifiableType)
             {
-                BaseType refBaseTypeInstance = (BaseType)value;
-                if (refBaseTypeInstance.UniqueGuid == Guid.Empty)
+                Validatable refValidatableInstance = (Validatable)value;
+                if (refValidatableInstance.UniqueGuid == Guid.Empty)
                 {
-                    validationFailureReasons.Add(BaseType.FailureKey(AttributeName, prop, ancestorPropertyNames), 
+                    validationFailureReasons.Add(FailureKey.Create(AttributeName, prop, ancestorPropertyNames), 
                         $"UniqueGuid of property {prop.Name} on class {instance.GetType().FullName} with instance hashcode : {instance.GetHashCode()} is not set (Empty Guid)");
                     return false;
                 }

@@ -1,6 +1,6 @@
-﻿using ISL.Firefly.DataTypes.Common.Attributes;
+﻿using LocationMap.Definitions.Attributes;
 using LocationMap.Logging;
-using LocationMap.PhysicalEntities.AnimalNeeds;
+using LocationMap.PhysicalEntities.Animals.AnimalNeeds;
 using System;
 using System.Collections.Generic;
 using System.Linq;

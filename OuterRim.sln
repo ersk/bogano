@@ -11,6 +11,10 @@ Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Definitions", "Definitions\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestRunner", "TestRunner\TestRunner.csproj", "{D99A82C1-D950-406D-953A-AB17F6B78122}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject1", "TestProject1\TestProject1.csproj", "{DAFE54B8-CBBA-4494-9655-BC7023390BCD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PixiJSTest", "PixiJSTest\PixiJSTest.csproj", "{E078B23E-8717-4B75-B7EA-7426FA9513C7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,6 +33,14 @@ Global
 		{D99A82C1-D950-406D-953A-AB17F6B78122}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D99A82C1-D950-406D-953A-AB17F6B78122}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D99A82C1-D950-406D-953A-AB17F6B78122}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DAFE54B8-CBBA-4494-9655-BC7023390BCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAFE54B8-CBBA-4494-9655-BC7023390BCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAFE54B8-CBBA-4494-9655-BC7023390BCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAFE54B8-CBBA-4494-9655-BC7023390BCD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E078B23E-8717-4B75-B7EA-7426FA9513C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E078B23E-8717-4B75-B7EA-7426FA9513C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E078B23E-8717-4B75-B7EA-7426FA9513C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E078B23E-8717-4B75-B7EA-7426FA9513C7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

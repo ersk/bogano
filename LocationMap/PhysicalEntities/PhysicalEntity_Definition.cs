@@ -1,4 +1,5 @@
-﻿using ISL.Firefly.DataTypes.Common.Attributes;
+﻿using LocationMap.Definitions.Attributes;
+using LocationMap.Definitions;
 using LocationMap.Interactions.Activities;
 using LocationMap.Logging;
 using LocationMap.PhysicalEntities.AnimalNeeds;

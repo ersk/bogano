@@ -7,7 +7,7 @@ using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
-namespace ISL.Firefly.DataTypes.Common.Attributes
+namespace LocationMap.Definitions.Attributes
 {
     /// <summary>
     /// Attribute can be added to datatypes specified in the SupportedTypesEnum.
@@ -133,7 +133,7 @@ namespace ISL.Firefly.DataTypes.Common.Attributes
             + $" has a value of {attrInstanceValue}."
             + $" Expected greater than or equal to {minValueAttr.MaximumValue}.";
 
-                validationFailureReasons.Add(BaseType.FailureKey(AttributeName, prop, ancestorPropertyNames), msg);
+                validationFailureReasons.Add(FailureKey.Create(AttributeName, prop, ancestorPropertyNames), msg);
             }
 
             return valid;

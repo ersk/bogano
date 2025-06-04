@@ -1,0 +1,6 @@
+C:\Users\serskine\_Personal\GitHub\bogano\LocationMap\obj\Debug\net8.0\LocationMap.csproj.AssemblyReference.cache
+C:\Users\serskine\_Personal\GitHub\bogano\LocationMap\obj\Debug\net8.0\LocationMap.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\serskine\_Personal\GitHub\bogano\LocationMap\obj\Debug\net8.0\LocationMap.AssemblyInfoInputs.cache
+C:\Users\serskine\_Personal\GitHub\bogano\LocationMap\obj\Debug\net8.0\LocationMap.AssemblyInfo.cs
+C:\Users\serskine\_Personal\GitHub\bogano\LocationMap\obj\Debug\net8.0\LocationMap.csproj.CoreCompileInputs.cache
+C:\Users\serskine\_Personal\GitHub\bogano\LocationMap\obj\Debug\net8.0\LocationMap.sourcelink.json
