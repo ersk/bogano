@@ -37,6 +37,10 @@ namespace LocationMap.PhysicalEntities.Animals
 
         public Animal_PhysicalEntity()
         {
+            // species
+
+            // take in generic code
+
             currentAttributes = new Animal_Attributes();
             currentAttributes.GenerateHumanPotential();
         }

@@ -77,19 +77,25 @@ namespace LocationMap.PhysicalEntities.Animals.Sentients
             this.coolness = GetAverage(rand, Assertive, Introversion);
             this.courage = GetAverage(rand, Assertive, Intuition, Feeling);
             this.creativity = GetAverage(rand, Intuition, Perceiving);
-            this.empathy = GetAverage(rand, Feeling);
+            this.empathy = GetAverage(rand, Feeling, Turbulant);
             this.concentration = GetAverage(rand, Introversion, Assertive, Judging, Sensing);
             this.fortitude = GetAverage(rand, Assertive, Sensing, Thinking);
             this.intelligence = GetAverage(rand, Introversion, Thinking, Perceiving);
             this.memory = GetAverage(rand, Thinking, Introversion, Assertive, Sensing, Judging);
             this.positivity = GetAverage(rand, Assertive);
-            this.thinkingSpeed = GetAverage(rand, Assertive, introversionExtroversion, Sensing, thinkingSpeed, Judging);
+            this.thinkingSpeed = GetAverage(rand, Thinking, Turbulant, Perceiving, Intuition);
 
-            // Tertiary
-            // Short term memory
-            // long term memory
-            //reflexes
-
+            /*
+             * Creativity
+             *      Musicality
+             * Fortitude
+             *      Determination
+             * Tertiary
+             *      Short term memory
+             *      Long term memory
+             * Thinking Speed
+             *      Reflextes
+             */
         }
 
         public static Sentience Generate(int animalId, Random rand)

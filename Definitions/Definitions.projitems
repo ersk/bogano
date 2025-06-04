@@ -11,4 +11,7 @@
   <ItemGroup>
     <Content Include="$(MSBuildThisFileDirectory)Physical_Entities\Animal_Consumables\Water_Bottle.json" />
   </ItemGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Physical_Entities\Animal\AnimalDna.cs" />
+  </ItemGroup>
 </Project>

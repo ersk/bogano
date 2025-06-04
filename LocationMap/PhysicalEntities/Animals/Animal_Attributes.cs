@@ -22,6 +22,15 @@ namespace LocationMap.PhysicalEntities.Animals
         private int1000 coordination;   // & balance / stability?
         private int1000 stamina;
         private int1000 flexibility;
+        // Athleticism => jump
+
+        //  weight carried
+        /*
+         * Physical stats affected by:
+         *  - health/condition
+         *  - weight carried
+         *  - weather? (when outside)
+         */
 
         public SexEnum Sex => sex;
 
