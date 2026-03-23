@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace LocationMap.Map
 {
-    internal class MapTileTerrain_Definition : Definition
+    internal class MapTileTerrain_Definition : Specie
     {
         private float fertility;
         public float Fertility => fertility;

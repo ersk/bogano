@@ -14,7 +14,7 @@ namespace LocationMap.PhysicalEntities
 
 
 
-    internal class PhysicalEntity_Definition : Definition
+    internal class PhysicalEntity_Definition : Specie
     {
         //public new bool IsValid(out CodingReport? codingReport)
         //{
